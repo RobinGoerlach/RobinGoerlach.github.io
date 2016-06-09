@@ -1,0 +1,146 @@
+/* HTML Tags */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    display: block;
+    margin: 8px;
+    box-sizing: border-box;
+    color: #373737;
+    background: #212121;
+    font-size: 16px;
+    font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    font-weight: 700;
+    color: #222222;
+    font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
+    letter-spacing: -1px;
+}
+
+a {
+    text-decoration: none;
+    color: #007edf;
+    text-shadow: none;
+    transition: color 0.5s ease;
+    transition: text-shadow 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -webkit-transition: text-shadow 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -moz-transition: text-shadow 0.5s ease;
+    -o-transition: color 0.5s ease;
+    -o-transition: text-shadow 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -ms-transition: text-shadow 0.5s ease;
+}
+
+/* General */
+.tooltip {
+    position: relative;
+    display: inline;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: darkgray;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%; 
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip: {
+    display: inline;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Page Header */
+#project_title {
+    margin: 0;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: #111 0px 0px 10px;
+}
+
+#header_wrap .inner {
+    padding: 50px 10px 30px 10px;
+}
+
+.inner {
+    position: relative;
+    max-width: 640px;
+    padding: 20px 10px;
+    margin: 0 auto;
+}
+
+.outer {
+    width: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+#forkme_banner {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 10;
+    padding: 10px 50px 10px 10px;
+    color: #fff;
+    background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+/* Page Footer */
+#footer_wrap {
+    background: #212121;
+}
+
+.creds {
+    color: #f2f2f2;
+}
+
+.creds a {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+/* Main content */
+#main_content_wrap {
+    background: #f2f2f2;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+
+.download-bar {display: none;}
